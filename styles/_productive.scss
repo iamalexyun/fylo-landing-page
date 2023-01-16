@@ -1,0 +1,31 @@
+.productive {
+  &__grid {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    @include breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: none;
+    }
+  }
+  &__image {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    @include breakpoint(large) {
+      padding-right: 4rem;
+    }
+    h2 {
+      @include breakpoint(large) {
+        max-width: 400px;
+      }
+    }
+    p {
+    }
+  }
+}
